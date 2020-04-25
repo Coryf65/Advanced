@@ -1,6 +1,6 @@
 # Advanced_Python
 
-- Follow along with me on Linkedin
+- Follow along with me on Linkedin, 
 [link](https://www.linkedin.com/learning/advanced-python)
 
 # Python Language Features
@@ -149,3 +149,9 @@
         | X and Y  | true if X and Y are both true  |
         | X or Y  | true if either X or Y are true  |
         | not X  | if X is false, then true, else false  |
+
+4. Strings and Bytes
+
+    - strings in Python 3 are a sequence of Unicode characters
+    
+    - bytes are a sequence of raw eight-bit values
