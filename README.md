@@ -61,7 +61,8 @@
 
     - However, in a slice the colon acts like a binary operator, and should have equal amounts on either side 
         (treating it as the operator with the lowest priority). 
-        In an extended slice, both colons must have the same amount of spacing applied. Exception: when a slice parameter is omitted, the space is omitted:
+        In an extended slice, both colons must have the same amount of spacing applied. Exception: 
+        when a slice parameter is omitted, the space is omitted:
 
         ```Python
         # Correct:
@@ -112,3 +113,39 @@
         y             = 2
         long_variable = 3
         ```
+
+3. Truth Value Testing
+
+    -  In general, any object is considered to be equivalent to Boolean true, 
+        unless it's class defines a Bool method that returns false, or has a len method that returns a zero length. 
+    
+    - False Values
+
+        - False and None
+
+        - Numeric 0 values
+
+        - Decimal(0), Fraction(0, x)
+
+        - Empty sequences / collections: '', (), [], {}
+
+        - Empty sets and ranges: set(), range(0)
+
+    - True Values
+
+        - custom objects Unless they return a bool value of false
+
+        ```Python
+            class myClass:
+              def __bool__(self):
+                return false
+
+              def __len__(self):
+                return 0 
+        ```
+        
+        | Boolean Operation  | Result |
+        | ------------- | ------------- |
+        | X and Y  | true if X and Y are both true  |
+        | X or Y  | true if either X or Y are true  |
+        | not X  | if X is false, then true, else false  |
