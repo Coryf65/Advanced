@@ -270,12 +270,12 @@
 
 1. Basic Collections
 
-    type | info
-    --- | --- 
-    list []  | Mutable sequence of values
-    tuple ,  | Fixed sequence of values
-    set {}  | Sequence of distinct values, Mutable
-    dictionary  | Colection of key-value pairs, Mutable
+    |type | info |
+    | --- | ---- |
+    | list []  | Mutable sequence of values |
+    | tuple ,  | Fixed sequence of values |
+    | set {}  | Sequence of distinct values, Mutable |
+    | dictionary  | Colection of key-value pairs, Mutable |
 
 2. Advanced Collections Module
 
