@@ -203,7 +203,8 @@
 ## Variable Argument lists
 
     1. Define functions that can take variable number of parameters
-        _```Python *args``` is more of a naming convention could be named whatever but other devs understand this naming_
+        ```Python *args``` 
+        _is more of a naming convention could be named whatever but other devs understand this naming_
 
         - example:
 
