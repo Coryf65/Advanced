@@ -12,10 +12,13 @@ def addition(base, *args):
 
 
 def main():
-    # TODO: pass different arguments
-    print(addition())
+    # pass different arguments
+    print(addition(5, 10, 15, 20))
+    print(addition(1, 2, 3))
 
-    # TODO: pass an existing list
+    # pass an existing list
+    myNums = [5, 10, 15, 20]
+    print(addition(*myNums))
 
 
 if __name__ == "__main__":
