@@ -191,7 +191,7 @@
         print(arg1, arg2)
     ```
 
-    - To See Documentation about a function works on any module, class, method
+    - To See Documentation about a module, class, method
 
     ```Python
         # function_name.__doc__
