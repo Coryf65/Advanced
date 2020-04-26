@@ -1,9 +1,10 @@
 # use transform functions like sorted, filter, map
 
-
+# Checks if the given nums are divisible by 2 evenly
 def filterFunc(x):
-    pass
-
+    if x % 2 == 0:
+        return False
+    return True
 
 def filterFunc2(x):
     pass
@@ -24,6 +25,9 @@ def main():
     grades = (81, 89, 94, 78, 61, 66, 99, 74)
 
     # TODO: use filter to remove items from a list
+
+    odd_nums = list(filter(filterFunc, nums))
+    print(odd_nums)
 
     # TODO: use filter on non-numeric sequence
 
