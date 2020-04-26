@@ -17,7 +17,7 @@ def main():
     # TODO: iterate using a function and a sentinel
 
     # Processing from testfile.txt
-    with open("BuiltIn_Functions/testfile.txt", "r") as fp:
+    with open("02 BuiltIn_Functions/testfile.txt", "r") as fp:
         # it looks for the  empty string to indicate that is the end of our file
         for line in iter(fp.readline, ''):
             print(line)
