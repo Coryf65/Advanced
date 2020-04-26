@@ -221,47 +221,47 @@
 
 ## Lambda Functions
 
-    - small anonymous functions
+- small anonymous functions
 
-    -  can be passed as arguments where you need a function
+-  can be passed as arguments where you need a function
 
-    - Typically used in place just when needed
+- Typically used in place just when needed
 
-    - Defined as:
+- Defined as:
 
-        ```Python
-            lambda (parameters) : (expression)
-        ```
+    ```Python
+        lambda (parameters) : (expression)
+    ```
 
-    - Useful when running simple functions
+- Useful when running simple functions
 
-    - example:
-        (converting Celsisus to Fahrenheit vice versa)
+- example:
+    (converting Celsisus to Fahrenheit vice versa)
 
-        ```Python
-        def CelsisusToFahrenheit(temp):
-            return (temp * 9/5) + 32
-
-
-        def FahrenheitToCelsisus(temp):
-            return (temp-32) * 5/9
+    ```Python
+    def CelsisusToFahrenheit(temp):
+        return (temp * 9/5) + 32
 
 
-        def main():
-            ctemps = [0, 12, 34, 100]
-            ftemps = [32, 65, 100, 212]
+    def FahrenheitToCelsisus(temp):
+        return (temp-32) * 5/9
 
-        
-            print('\n Calling as Functions \n')
 
-            print(list(map(FahrenheitToCelsisus, ftemps)))
-            print(list(map(CelsisusToFahrenheit, ctemps)))
+    def main():
+        ctemps = [0, 12, 34, 100]
+        ftemps = [32, 65, 100, 212]
 
-            print('\n Calling as Lamdas \n')    
-        
-            print(list(map(lambda t: (t-32) * 5/9, ftemps)))
-            print(list(map(lambda t: (t * 9/5) + 32, ctemps)))
+    
+        print('\n Calling as Functions \n')
 
-        if __name__ == "__main__":
-            main()
-        ```
+        print(list(map(FahrenheitToCelsisus, ftemps)))
+        print(list(map(CelsisusToFahrenheit, ctemps)))
+
+        print('\n Calling as Lamdas \n')    
+    
+        print(list(map(lambda t: (t-32) * 5/9, ftemps)))
+        print(list(map(lambda t: (t * 9/5) + 32, ctemps)))
+
+    if __name__ == "__main__":
+        main()
+    ```
