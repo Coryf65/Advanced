@@ -7,8 +7,20 @@ def main():
     daysFr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
 
     # TODO: use iter to create an iterator over a collection
+    i = iter(days)
+
+    # move to the next item
+    print(next(i))
+    print(next(i))
+    print(next(i))
 
     # TODO: iterate using a function and a sentinel
+
+    # Processing from testfile.txt
+    with open("testfile.txt", "r") as fp:
+        # it looks for the  empty string to indicate that is the end of our file
+        for line in iter(fp.readline, ''):
+            print(line)
 
     # TODO: use regular interation over the days
 
