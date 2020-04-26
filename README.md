@@ -156,6 +156,8 @@
     
     - bytes are a sequence of raw eight-bit values
 
+# Advanced Python Functions
+
 ## Documenting Code
 
 1. Using a Docstring
@@ -197,3 +199,20 @@
         # function_name.__doc__
         print(myFunction.__doc__)
     ```
+
+## Variable Argument lists
+
+    1. Define functions that can take variable number of parameters
+        _*args is more of a naming convention could be named whatever but other devs understand this naming_
+
+        - example:
+
+            ```Python
+                def addition(*numbers)
+            ```
+
+        - a message logging func
+
+            ```Python
+                def log_message(msgType, msg, *params)
+            ``` 
