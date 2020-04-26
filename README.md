@@ -279,9 +279,6 @@
 
 2. Advanced Collections Module
 
-    - Special Collection Types
-        - (use 'import collections')
-
     |type | info |
     | --- | ---- |
     | namedtuple  | Tuple with named fields |
