@@ -213,7 +213,7 @@
     - a message logging func
 
         ```Python
-            def log_message(msgType, msg, *params)
+            def log_message(msgType, msg, *args)
         ``` 
                 
     - NOTE: *args is more of a naming convention,
