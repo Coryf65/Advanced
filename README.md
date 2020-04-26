@@ -279,4 +279,12 @@
 
 2. Advanced Collections Module
 
-    - use 'import collections'
+    - Special Collection Types
+        - (use 'import collections')
+
+    |type | info |
+    | --- | ---- |
+    | namedtuple  | Tuple with named fields |
+    | OrderedDict, defaultdict  | Dictionaries with special properties |
+    | counter  | Counts distinct values |
+    | deque  | Double-ended list object |
