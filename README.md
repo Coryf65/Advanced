@@ -204,12 +204,6 @@
 
     1. Define functions that can take variable number of parameters
 
-        ```Python
-            *args
-        ```
-
-        - is more of a naming convention could be named whatever but other devs understand this naming
-
         - example:
 
             ```Python
@@ -221,3 +215,6 @@
             ```Python
                 def log_message(msgType, msg, *params)
             ``` 
+                
+        - NOTE: *args is more of a naming convention,
+            could be named whatever but other devs understand this naming
