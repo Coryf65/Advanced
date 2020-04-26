@@ -270,6 +270,7 @@
 
 1. Basic Collections
 
+    |---|---|
     | list []  | Mutable sequence of values  |
     | tuple ,  | Fixed sequence of values  |
     | set {}  | Sequence of distinct values, Mutable  |
