@@ -155,3 +155,45 @@
     - strings in Python 3 are a sequence of Unicode characters
     
     - bytes are a sequence of raw eight-bit values
+
+## Documenting Code
+
+1. Using a Docstring
+
+    - Enclose docstrings in triple quotes
+
+    - First line should be a summary sentence of functionality
+
+    - Modules: List the important classes, finctions, and exceptions
+
+    - Classes: List important methods
+
+    - Functions
+
+        - List parameters and explain eaxh, one per line
+
+        - if there's a return value, then list it; otherwise omit
+
+        - If the function raises exceptions, mention those
+
+2. Example
+
+    - Documenting a Function
+
+    ```Python
+        def myFunction(arg1, arg2=None):
+        """myFunction(args, args2=None) --> Prints the values that you pass in!
+            
+        Parameters:
+        args: Description of this arg
+        args2: decription, defaults to None
+        """
+        print(arg1, arg2)
+    ```
+
+    - To See Documentation about a function works on any module, class, method
+
+    ```Python
+        # function_name.__doc__
+        print(myFunction.__doc__)
+    ```
