@@ -202,19 +202,19 @@
 
 ## Variable Argument lists
 
-    1. Define functions that can take variable number of parameters
+1. Define functions that can take variable number of parameters
 
-        - example:
+    - example:
 
-            ```Python
-                def addition(*numbers)
-            ```
+        ```Python
+            def addition(*numbers)
+        ```
 
-        - a message logging func
+    - a message logging func
 
-            ```Python
-                def log_message(msgType, msg, *params)
-            ``` 
+        ```Python
+            def log_message(msgType, msg, *params)
+        ``` 
                 
-        - NOTE: *args is more of a naming convention,
-            could be named whatever but other devs understand this naming
+    - NOTE: *args is more of a naming convention,
+        could be named whatever but other devs understand this naming
