@@ -270,6 +270,7 @@
 
 1. Basic Collections
 
+    type | info
     --- | --- 
     list []  | Mutable sequence of values
     tuple ,  | Fixed sequence of values
