@@ -285,3 +285,7 @@
     | OrderedDict, defaultdict  | Dictionaries with special properties |
     | counter  | Counts distinct values |
     | deque  | Double-ended list object |
+
+    - Using namedtuple
+
+        - 
