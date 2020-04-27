@@ -327,3 +327,4 @@
         | object.__pow__(self, other)  | self ** other  |
         | object.__and__(self, other)  | self & other  |
         | object.__or__(self, other)  | self | other  |
+        etc.
