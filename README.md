@@ -299,7 +299,7 @@
         | object.__str__(self) | str(object), print(object), "{0}", .format(object)  | nicely formatted human readable string |
         | object.__repe__(self)  | repr(object) | Try to return a python expression that could be used to recreate the object with the same values |
         | object.__format__(self, format_spec)  | format(object, format_spec) | Up to you to implement the format object by spec |
-        | object.__bytes__(self)  | bytes(objects) | display you object in a bytes format |
+        | object.__bytes__(self)  | bytes(objects) | display your object in a bytes format |
 
     - Define computed and default attributes
 
