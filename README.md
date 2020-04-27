@@ -285,3 +285,17 @@
     | OrderedDict, defaultdict  | Dictionaries with special properties |
     | counter  | Counts distinct values |
     | deque  | Double-ended list object |
+
+# Advanced Classes
+
+1. Things you can do with classes in python
+
+    - Create enumerations
+
+    - Customize string and byte representations of objects
+
+    - Define computed and default attributes
+
+    - Control how objects are logically compared to each other
+
+    - Give objects numeric-like behavior (addition, subtraction, etc.)
