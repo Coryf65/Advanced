@@ -337,3 +337,65 @@
         | `object.__and__(self, other)`  | self & other  |
         | `object.__or__(self, other)`  | self | other  |
         etc.
+
+# Logging (for debugging)
+
+1. Why ?
+
+    - Captures and records events while the app is running
+
+    - Useful debugging feature
+
+        - Not always practical to debug in realtime
+    
+    - Events can be categorized for easier analysis
+
+    - Provides transaction record of a program's execution
+
+    - Highly customizable
+
+2. How ?
+
+    - import logging
+
+        - DEBUG `logging.debug("debug-level message")`, Diagnostic info useful for debugging
+        - INFO `logging.info("info-level message")`, General info about program execution results
+        - WARNING `logging.warning("warning-level message")`, Something, unexpected, or an approaching problem
+        - ERROR `logging.error("error-level message")`, Unable to preform a specific operation due to a problem
+        - CRITICAL `logging.critical("critical-level message")`, Program may not be able to continue, serious error
+
+3. Write log messages to a log file example:
+
+    ```Python
+    demonstrate the logging api in Python
+
+
+    # TODO: use the built-in logging module
+    import logging
+
+    def main():
+        # TODO: Use basicConfig to configure logging, Normally only warning and below get displayed, in Append mode by default
+        # level= which level and up to display messages for
+        # filename= Filepath for a file to write to
+        # filemode= Changed to 'w' to OverWrite everytime
+        logging.basicConfig(level=logging.DEBUG,
+                    filename="06 Logging/output.log",
+                    filemode="w")
+
+        # Try out each of the log levels
+        logging.debug("This is a debug message")
+        logging.info("This is a info message")
+
+        # Normally only warning and below get displayed
+        # BUT we can change this in the settings, logging.basicConfig()
+        logging.warning("This is a warning message")
+        logging.error("This is a error message")
+        logging.critical("This is a critical message")
+
+        # TODO: Output formatted strings to the log
+        logging.info("Here is a variable {} and an int: {}".format("string", 10))
+
+
+    if __name__ == "__main__":
+        main()
+    ```
