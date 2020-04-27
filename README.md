@@ -296,20 +296,20 @@
 
         | String Function | Called When | What is it ? |
         | --------------- | ----------- | ------------ |
-        | object.__str__(self) | str(object), print(object), "{0}", .format(object)  | nicely formatted human readable string |
-        | object.__repe__(self)  | repr(object) | Try to return a python expression that could be used to recreate the object with the same values |
-        | object.__format__(self, format_spec)  | format(object, format_spec) | Up to you to implement the format object by spec |
-        | object.__bytes__(self)  | bytes(objects) | display your object in a bytes format |
+        | `object.__str__(self)` | str(object), print(object), "{0}", .format(object)  | nicely formatted human readable string |
+        | `object.__repe__(self)`  | repr(object) | Try to return a python expression that could be used to recreate the object with the same values |
+        | `object.__format__(self, format_spec)` | format(object, format_spec) | Up to you to implement the format object by spec |
+        | `object.__bytes__(self)` | bytes(objects) | display your object in a bytes format |
 
     - Define computed and default attributes
 
         | Attribute Function | Called When |
         | ------------------ | ----------- |
-        | object.__getattribute__(self, attr)  | ! object.attr  |
-        | object.__getattr__(self, attr)  | object.attr |
-        | object.__setattr__(self, attr, val)  | object.attr = val |
-        | object.__delattr__(self)  | del object.attr |
-        | object.__dir__(self)  | dir(object) |
+        | `object.__getattribute__(self, attr)`  | ! object.attr  |
+        | `object.__getattr__(self, attr)`  | object.attr |
+        | `object.__setattr__(self, attr, val)`  | object.attr = val |
+        | `object.__delattr__(self)`  | del object.attr |
+        | `object.__dir__(self)`  | dir(object) |
 
         ! = python calls this when reading your class, be careful
 
@@ -317,23 +317,23 @@
 
         | Comparison Function | Called When |
         | ------------------ | ----------- |
-        | object.__gt__(self, other)  | self > other  |
-        | object.__ge__(self, other)  | self >= other  |
-        | object.__It__(self, other)  | self < other  |
-        | object.__le__(self, other)  | self <= other  |
-        | object.__eq__(self, other)  | self == other  |
-        | object.__ne__(self, other)  | self != other  |
+        | `object.__gt__(self, other)`  | self > other  |
+        | `object.__ge__(self, other)`  | self >= other  |
+        | `object.__It__(self, other)`  | self < other  |
+        | `object.__le__(self, other)`  | self <= other  |
+        | `object.__eq__(self, other)`  | self == other  |
+        | `object.__ne__(self, other)`  | self != other  |
 
     - Give objects numeric-like behavior (addition, subtraction, etc.)
 
         | Numeric Function | Called When |
         | ------------------ | ----------- |
-        | object.__add__(self, other)  | self + other  |
-        | object.__sub__(self, other)  | self - other  |
-        | object.__mul__(self, other)  | self * other  |
-        | object.__div__(self, other)  | self / other  |
-        | object.__floordiv__(self, other)  | self // other  |
-        | object.__pow__(self, other)  | self ** other  |
-        | object.__and__(self, other)  | self & other  |
-        | object.__or__(self, other)  | self | other  |
+        | `object.__add__(self, other)`  | self + other  |
+        | `object.__sub__(self, other)`  | self - other  |
+        | `object.__mul__(self, other)`  | self * other  |
+        | `object.__div__(self, other)`  | self / other  |
+        | `object.__floordiv__(self, other)`  | self // other  |
+        | `object.__pow__(self, other)`  | self ** other  |
+        | `object.__and__(self, other)`  | self & other  |
+        | `object.__or__(self, other)`  | self | other  |
         etc.
