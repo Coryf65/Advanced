@@ -312,6 +312,18 @@
         | object.__dir__(self)  | dir(object) |
 
         ! = python calls this when reading your class, be careful
+
     - Control how objects are logically compared to each other
 
     - Give objects numeric-like behavior (addition, subtraction, etc.)
+
+        | Attribute Function | Called When |
+        | ------------------ | ----------- |
+        | object.__add__(self, other)  | self + other  |
+        | object.__sub__(self, other)  | self - other  |
+        | object.__mul__(self, other)  | self * other  |
+        | object.__div__(self, other)  | self / other  |
+        | object.__floordiv__(self, other)  | self // other  |
+        | object.__pow__(self, other)  | self ** other  |
+        | object.__and__(self, other)  | self & other  |
+        | object.__or__(self, other)  | self | other  |
