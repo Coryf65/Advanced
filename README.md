@@ -315,9 +315,18 @@
 
     - Control how objects are logically compared to each other
 
+        | Comparison Function | Called When |
+        | ------------------ | ----------- |
+        | object.__gt__(self, other)  | self > other  |
+        | object.__ge__(self, other)  | self >= other  |
+        | object.__It__(self, other)  | self < other  |
+        | object.__le__(self, other)  | self <= other  |
+        | object.__eq__(self, other)  | self == other  |
+        | object.__ne__(self, other)  | self != other  |
+
     - Give objects numeric-like behavior (addition, subtraction, etc.)
 
-        | Attribute Function | Called When |
+        | Numeric Function | Called When |
         | ------------------ | ----------- |
         | object.__add__(self, other)  | self + other  |
         | object.__sub__(self, other)  | self - other  |
