@@ -476,3 +476,18 @@ if __name__ == "__main__":
 6. More very cool Advanced things
 
     [Python Docs - Logging](https://docs.python.org/3/howto/logging-cookbook.html)
+
+# Python Comprehensions
+
+    - A way to write python code in a different way
+    example:
+
+*normal way*
+```Python
+    list(  map(FahrenheitToCelsius, [32, 65, 104, 212])  )
+```
+
+*Comprehension way*
+```Python
+    [ (t*9/5) + 32   for t   in [32, 65, 104, 212])  ]
+```
