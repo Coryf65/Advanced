@@ -480,14 +480,15 @@ if __name__ == "__main__":
 # Python Comprehensions
 
     - A way to write python code in a different way
-    example:
+
+example:
 
 *normal way*
 ```Python
     list(  map(FahrenheitToCelsius, [32, 65, 104, 212])  )
 ```
 
-*Comprehension way*
+*Comprehension way, to write a list*
 ```Python
     [ (t*9/5) + 32   for t   in [32, 65, 104, 212])  ]
 ```
