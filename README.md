@@ -399,3 +399,35 @@
     if __name__ == "__main__":
         main()
     ```
+
+4. Customized Logging
+
+    - The basic config also takes these two args
+
+        - `format=`  The format argument specifies a string that controls the precise formatting of the output message that is sent to the log.
+
+        - `datefmt=`  The date format argument is used in conjunction with the format argument. 
+            If the format argument contains a date specifier then the date format argument is used to format the date string using 
+            the same kind of date formatting strings that you would pass to the strftime function. 
+
+    ```Python
+        basicConfig(
+            format= formatstr,
+            datefmt= date_format_str
+        )
+    ```
+
+    | Some Useful Formats | About |
+    | ------------------- | ----- |
+    | `%(asctime)s`  | Human reable date format when the record was created  |
+    | `%(filename)s`  | File name where the log message originated  |
+    | `%(funcName)s`  | Function name where the log message originated from  |
+    | `%(levelname)s`  | String representation of the message level  |
+    | `%(levelno)d`  | Numeric repesentation of the message level  |
+    | `%(lineno)d`  | Source line number where the logging call was issued (if available)  |
+    | `%(message)s`  | The logged message string itself  |
+    | `%(module)s`  | The Module name portion of the filename where the meddage was logged  |
+
+5. Some very cool Advanced things
+
+    [Python Docs - Logging](https://docs.python.org/3/howto/logging-cookbook.html)
